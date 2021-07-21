@@ -37,6 +37,8 @@ async function run() {
     const versionPath = core.getInput('version-path')
     const skipVersionFile = core.getInput('skip-version-file').toLowerCase() === 'true'
     const skipCommit = core.getInput('skip-commit').toLowerCase() === 'true'
+    const skipTag = core.getInput('skip-tag').toLowerCase() === 'true'
+    const skipPush = core.getInput('skip-push').toLowerCase() === 'true'
     const skipEmptyRelease = core.getInput('skip-on-empty').toLowerCase() === 'true'
     const conventionalConfigFile = core.getInput('config-file-path')
     const preChangelogGenerationFile = core.getInput('pre-changelog-generation')
@@ -170,10 +172,12 @@ async function run() {
       }
 
       // Create the new tag
-      await git.createTag(gitTag)
+      if(!skipTag)
+        await git.createTag(gitTag)
 
       core.info('Push all changes')
-      await git.push()
+      if(!skipPush)
+        await git.push()
 
       // Set outputs so other actions (for example actions/create-release) can use it
       core.setOutput('changelog', stringChangelog)
