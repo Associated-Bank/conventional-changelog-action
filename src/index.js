@@ -141,6 +141,7 @@ async function run() {
 
       if (skipEmptyRelease && cleanChangelog === '') {
         core.info('Generated changelog is empty and skip-on-empty has been activated so we skip this step')
+        core.setOutput('version', newVersion)
         core.setOutput('skipped', 'true')
         return
       }
