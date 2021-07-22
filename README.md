@@ -17,8 +17,10 @@ This action will bump version, tag commit and generate a changelog with conventi
 - **Optional** `version-path`: The place inside the version file to bump. Default `version`.
 - **Optional** `skip-on-empty`: Boolean to specify if you want to skip empty release (no-changelog generated). This case occured when you push `chore` commit with `angular` for example. Default `'true'`.
 - **Optional** `skip-version-file`: Do not update the version file. Default `'false'`.
-- **Optional** `skip-commit`: Do create a release commit. Default `'false'`.
+- **Optional** `skip-commit`: Do not create a release commit. Default `'false'`.
 - **Optional** `pre-commit`: Path to the pre-commit script file. No hook by default.
+- **Optional** `skip-tag`: Do not create a release tag. Default `'false'`.
+- **Optional** `skip-push`: Do not push any changes. Default `'false'`.
 - **Optional** `fallback-version`: The fallback version, if no older one can be detected, or if it is the first one. Default `'0.1.0'`
 - **Optional** `config-file-path`: Path to the conventional changelog config file. If set, the preset setting will be ignored
 - **Optional** `pre-changelog-generation`: Path to the pre-changelog-generation script file. No hook by default.

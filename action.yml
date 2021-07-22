@@ -82,6 +82,16 @@ inputs:
   pre-commit:
     description: 'Path to the pre-commit script file'
     required: false
+    
+  skip-tag:
+    description: 'Do create a release tag'
+    default: 'false'
+    required: false
+    
+  skip-push:
+    description: 'Do create a push any changes'
+    default: 'false'
+    required: false
 
   fallback-version:
     description: 'The fallback version, if no older one can be detected, or if it is the first one'
