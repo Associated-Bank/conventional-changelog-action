@@ -1,3 +1,12 @@
+# [3.9.0](https://github.com/TriPSs/conventional-changelog-action/compare/v3.8.1...v3.9.0) (2021-07-27)
+
+
+### Features
+
+* return older version when not setting next version ([fc9b3bc](https://github.com/TriPSs/conventional-changelog-action/commit/fc9b3bc836a3538620858b457f50c114388ea945))
+
+
+
 ## [3.8.1](https://github.com/TriPSs/conventional-changelog-action/compare/v3.8.0...v3.8.1) (2021-07-22)
 
 
@@ -17,15 +26,6 @@
 
 
 ## [3.7.2](https://github.com/TriPSs/conventional-changelog-action/compare/v3.7.1...v3.7.2) (2021-07-22)
-
-
-
-## [3.7.1](https://github.com/TriPSs/conventional-changelog-action/compare/v3.7.0...v3.7.1) (2020-12-16)
-
-
-### Bug Fixes
-
-* Fixed that bumping multiple files with same extension type did only update one ([62453ed](https://github.com/TriPSs/conventional-changelog-action/commit/62453ed268eb6e82fcaf11351ce4cdd4f4b323aa))
 
 
 
