@@ -1,6 +1,6 @@
 # Conventional Changelog action
 
-This action will bump version, tag commit and generate a changelog with conventional commits.
+This action will bump version, tag commit, and generate a changelog with conventional commits.
 
 ## Inputs
 
